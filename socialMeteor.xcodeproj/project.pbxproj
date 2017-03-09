@@ -57,6 +57,7 @@
 		20CA53B01E719EB000572658 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		20CA53B21E71A05700572658 /* roundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundedButton.swift; sourceTree = "<group>"; };
 		20CA53B41E71A21F00572658 /* textField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = textField.swift; sourceTree = "<group>"; };
+		20CA53B71E71B02C00572658 /* socialMeteor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = socialMeteor.entitlements; sourceTree = "<group>"; };
 		629E639E6EF2BF0D8716BE22 /* Pods_socialMeteor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_socialMeteor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F02177EEC78839B312865CB0 /* Pods-socialMeteor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialMeteor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-socialMeteor/Pods-socialMeteor.debug.xcconfig"; sourceTree = "<group>"; };
 		FCCC8FCFD9F95E1F4603A0A5 /* Pods-socialMeteor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialMeteor.release.xcconfig"; path = "Pods/Target Support Files/Pods-socialMeteor/Pods-socialMeteor.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +96,8 @@
 		2043ED321E70F81C005ADEE8 /* socialMeteor */ = {
 			isa = PBXGroup;
 			children = (
+				20CA53B71E71B02C00572658 /* socialMeteor.entitlements */,
+				20CA53B61E71A57D00572658 /* Assets */,
 				2043ED491E70FA44005ADEE8 /* Controller */,
 				2043ED481E70FA3F005ADEE8 /* View */,
 				2043ED471E70FA2F005ADEE8 /* Model */,
@@ -103,9 +106,7 @@
 				2043ED3A1E70F81C005ADEE8 /* Assets.xcassets */,
 				2043ED3C1E70F81C005ADEE8 /* LaunchScreen.storyboard */,
 				2043ED451E70F854005ADEE8 /* GoogleService-Info.plist */,
-				2043ED4A1E71013B005ADEE8 /* sf_distant_galaxy */,
 				2043ED3F1E70F81C005ADEE8 /* Info.plist */,
-				20CA53B01E719EB000572658 /* constants.swift */,
 			);
 			path = socialMeteor;
 			sourceTree = "<group>";
@@ -152,6 +153,15 @@
 				2043ED561E71013B005ADEE8 /* SF Distant Galaxy.ttf */,
 			);
 			path = sf_distant_galaxy;
+			sourceTree = "<group>";
+		};
+		20CA53B61E71A57D00572658 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				20CA53B01E719EB000572658 /* constants.swift */,
+				2043ED4A1E71013B005ADEE8 /* sf_distant_galaxy */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 		37D0699B17B0620DAC099BA7 /* Frameworks */ = {
@@ -208,6 +218,11 @@
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 94BQ9T6DER;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -437,6 +452,7 @@
 			baseConfigurationReference = F02177EEC78839B312865CB0 /* Pods-socialMeteor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = socialMeteor/socialMeteor.entitlements;
 				DEVELOPMENT_TEAM = 94BQ9T6DER;
 				INFOPLIST_FILE = socialMeteor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -451,6 +467,7 @@
 			baseConfigurationReference = FCCC8FCFD9F95E1F4603A0A5 /* Pods-socialMeteor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = socialMeteor/socialMeteor.entitlements;
 				DEVELOPMENT_TEAM = 94BQ9T6DER;
 				INFOPLIST_FILE = socialMeteor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -92,6 +92,9 @@
                                         <state key="normal" title="Sign In/Sign Up">
                                             <color key="titleColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="NormalLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PbP-Hh-Msu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -127,6 +130,9 @@
                                     <constraint firstAttribute="width" constant="288" id="u3T-i4-3QR"/>
                                 </constraints>
                                 <state key="normal" image="facebooklogin"/>
+                                <connections>
+                                    <action selector="FBLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aPV-11-2Xt"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHD-yu-ctT">
                                 <rect key="frame" x="16" y="227" width="343" height="17"/>
@@ -160,6 +166,10 @@
                             <constraint firstAttribute="trailing" secondItem="NW4-Wl-Txr" secondAttribute="trailing" id="yY0-MR-X9e"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="KxX-gn-2Oh" id="gSN-85-iaG"/>
+                        <outlet property="password" destination="S08-ue-dCX" id="T5m-iu-Yg6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
