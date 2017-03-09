@@ -30,7 +30,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rM8-vQ-cZH">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rM8-vQ-cZH" customClass="topView" customModule="socialMeteor" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stars-Back" translatesAutoresizingMaskIntoConstraints="NO" id="2Fm-hB-XPf">
@@ -68,28 +68,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z1K-62-FvJ">
-                                <rect key="frame" x="43.5" y="264" width="288" height="99"/>
+                                <rect key="frame" x="44" y="264" width="288" height="99"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KxX-gn-2Oh">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KxX-gn-2Oh" customClass="textField" customModule="socialMeteor" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="22"/>
                                         <color key="textColor" white="0.0" alpha="0.86659888698630139" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="SFDistantGalaxy" family="SF Distant Galaxy" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S08-ue-dCX">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S08-ue-dCX" customClass="textField" customModule="socialMeteor" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="32" width="288" height="22"/>
                                         <color key="textColor" white="0.0" alpha="0.86659888699999998" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="SFDistantGalaxy" family="SF Distant Galaxy" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5e-AE-gl6">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5e-AE-gl6" customClass="roundedButton" customModule="socialMeteor" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="64" width="288" height="35"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="rYZ-kU-ulY"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="SFDistantGalaxyItalic" family="SF Distant Galaxy" pointSize="17"/>
-                                        <state key="normal" title="Sign In/Sign Up" backgroundImage="Stars-Back">
+                                        <state key="normal" title="Sign In/Sign Up">
                                             <color key="titleColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
@@ -121,8 +121,8 @@
                                     <constraint firstAttribute="trailing" secondItem="cwB-54-hqk" secondAttribute="trailing" constant="10" id="twS-GA-Jmd"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yig-0Q-Ekq" userLabel="FBButton">
-                                <rect key="frame" x="43.5" y="145" width="288" height="62"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yig-0Q-Ekq" userLabel="FBButton" customClass="roundedButton" customModule="socialMeteor" customModuleProvider="target">
+                                <rect key="frame" x="44" y="145" width="288" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="u3T-i4-3QR"/>
                                 </constraints>
