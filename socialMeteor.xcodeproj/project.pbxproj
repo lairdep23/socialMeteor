@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		2043ED341E70F81C005ADEE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043ED331E70F81C005ADEE8 /* AppDelegate.swift */; };
-		2043ED361E70F81C005ADEE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043ED351E70F81C005ADEE8 /* ViewController.swift */; };
+		2043ED361E70F81C005ADEE8 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043ED351E70F81C005ADEE8 /* SignInVC.swift */; };
 		2043ED391E70F81C005ADEE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED371E70F81C005ADEE8 /* Main.storyboard */; };
 		2043ED3B1E70F81C005ADEE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED3A1E70F81C005ADEE8 /* Assets.xcassets */; };
 		2043ED3E1E70F81C005ADEE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED3C1E70F81C005ADEE8 /* LaunchScreen.storyboard */; };
+		2043ED461E70F854005ADEE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED451E70F854005ADEE8 /* GoogleService-Info.plist */; };
+		8082D84AD92C3B1D70D3EFA7 /* Pods_socialMeteor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629E639E6EF2BF0D8716BE22 /* Pods_socialMeteor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2043ED301E70F81C005ADEE8 /* socialMeteor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialMeteor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2043ED331E70F81C005ADEE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2043ED351E70F81C005ADEE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2043ED351E70F81C005ADEE8 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		2043ED381E70F81C005ADEE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2043ED3A1E70F81C005ADEE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2043ED3D1E70F81C005ADEE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2043ED3F1E70F81C005ADEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2043ED451E70F854005ADEE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		629E639E6EF2BF0D8716BE22 /* Pods_socialMeteor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_socialMeteor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F02177EEC78839B312865CB0 /* Pods-socialMeteor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialMeteor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-socialMeteor/Pods-socialMeteor.debug.xcconfig"; sourceTree = "<group>"; };
+		FCCC8FCFD9F95E1F4603A0A5 /* Pods-socialMeteor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialMeteor.release.xcconfig"; path = "Pods/Target Support Files/Pods-socialMeteor/Pods-socialMeteor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8082D84AD92C3B1D70D3EFA7 /* Pods_socialMeteor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				2043ED321E70F81C005ADEE8 /* socialMeteor */,
 				2043ED311E70F81C005ADEE8 /* Products */,
+				57EC34B034D012F9AB9AF809 /* Pods */,
+				37D0699B17B0620DAC099BA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,56 @@
 		2043ED321E70F81C005ADEE8 /* socialMeteor */ = {
 			isa = PBXGroup;
 			children = (
+				2043ED491E70FA44005ADEE8 /* Controller */,
+				2043ED481E70FA3F005ADEE8 /* View */,
+				2043ED471E70FA2F005ADEE8 /* Model */,
 				2043ED331E70F81C005ADEE8 /* AppDelegate.swift */,
-				2043ED351E70F81C005ADEE8 /* ViewController.swift */,
 				2043ED371E70F81C005ADEE8 /* Main.storyboard */,
 				2043ED3A1E70F81C005ADEE8 /* Assets.xcassets */,
 				2043ED3C1E70F81C005ADEE8 /* LaunchScreen.storyboard */,
+				2043ED451E70F854005ADEE8 /* GoogleService-Info.plist */,
 				2043ED3F1E70F81C005ADEE8 /* Info.plist */,
 			);
 			path = socialMeteor;
+			sourceTree = "<group>";
+		};
+		2043ED471E70FA2F005ADEE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2043ED481E70FA3F005ADEE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2043ED491E70FA44005ADEE8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2043ED351E70F81C005ADEE8 /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		37D0699B17B0620DAC099BA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				629E639E6EF2BF0D8716BE22 /* Pods_socialMeteor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57EC34B034D012F9AB9AF809 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F02177EEC78839B312865CB0 /* Pods-socialMeteor.debug.xcconfig */,
+				FCCC8FCFD9F95E1F4603A0A5 /* Pods-socialMeteor.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2043ED421E70F81C005ADEE8 /* Build configuration list for PBXNativeTarget "socialMeteor" */;
 			buildPhases = (
+				F32E0F30A4422E8198D4AA33 /* [CP] Check Pods Manifest.lock */,
 				2043ED2C1E70F81C005ADEE8 /* Sources */,
 				2043ED2D1E70F81C005ADEE8 /* Frameworks */,
 				2043ED2E1E70F81C005ADEE8 /* Resources */,
+				1CBCDE2ABBBE6054AAABC3B3 /* [CP] Embed Pods Frameworks */,
+				EB7BF15492FA4B4915D84390 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2043ED3E1E70F81C005ADEE8 /* LaunchScreen.storyboard in Resources */,
+				2043ED461E70F854005ADEE8 /* GoogleService-Info.plist in Resources */,
 				2043ED3B1E70F81C005ADEE8 /* Assets.xcassets in Resources */,
 				2043ED391E70F81C005ADEE8 /* Main.storyboard in Resources */,
 			);
@@ -132,12 +187,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CBCDE2ABBBE6054AAABC3B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-socialMeteor/Pods-socialMeteor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB7BF15492FA4B4915D84390 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-socialMeteor/Pods-socialMeteor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F32E0F30A4422E8198D4AA33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2043ED2C1E70F81C005ADEE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2043ED361E70F81C005ADEE8 /* ViewController.swift in Sources */,
+				2043ED361E70F81C005ADEE8 /* SignInVC.swift in Sources */,
 				2043ED341E70F81C005ADEE8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +362,7 @@
 		};
 		2043ED431E70F81C005ADEE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F02177EEC78839B312865CB0 /* Pods-socialMeteor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 94BQ9T6DER;
@@ -272,6 +376,7 @@
 		};
 		2043ED441E70F81C005ADEE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCCC8FCFD9F95E1F4603A0A5 /* Pods-socialMeteor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 94BQ9T6DER;
@@ -302,6 +407,7 @@
 				2043ED441E70F81C005ADEE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

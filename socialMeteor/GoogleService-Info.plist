@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>846743516632-9d3sa6vvqj7f6vvq2tm4fofsegohi2o8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.846743516632-9d3sa6vvqj7f6vvq2tm4fofsegohi2o8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBlK7uEakT5H2K1caZx-M3IyX-L-ivO2uI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>846743516632</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.evanlaird.socialMeteor</string>
+	<key>PROJECT_ID</key>
+	<string>socialmediapractice-bb60d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>socialmediapractice-bb60d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:846743516632:ios:c6389422a1c89e24</string>
+	<key>DATABASE_URL</key>
+	<string>https://socialmediapractice-bb60d.firebaseio.com</string>
+</dict>
+</plist>
