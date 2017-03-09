@@ -13,6 +13,18 @@
 		2043ED3B1E70F81C005ADEE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED3A1E70F81C005ADEE8 /* Assets.xcassets */; };
 		2043ED3E1E70F81C005ADEE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED3C1E70F81C005ADEE8 /* LaunchScreen.storyboard */; };
 		2043ED461E70F854005ADEE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED451E70F854005ADEE8 /* GoogleService-Info.plist */; };
+		2043ED571E71013B005ADEE8 /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED4B1E71013B005ADEE8 /* Readme.txt */; };
+		2043ED581E71013B005ADEE8 /* SF Distant Galaxy Alternate Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED4C1E71013B005ADEE8 /* SF Distant Galaxy Alternate Italic.ttf */; };
+		2043ED591E71013B005ADEE8 /* SF Distant Galaxy Alternate.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED4D1E71013B005ADEE8 /* SF Distant Galaxy Alternate.ttf */; };
+		2043ED5A1E71013B005ADEE8 /* SF Distant Galaxy AltOutline Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED4E1E71013B005ADEE8 /* SF Distant Galaxy AltOutline Italic.ttf */; };
+		2043ED5B1E71013B005ADEE8 /* SF Distant Galaxy AltOutline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED4F1E71013B005ADEE8 /* SF Distant Galaxy AltOutline.ttf */; };
+		2043ED5C1E71013B005ADEE8 /* SF Distant Galaxy Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED501E71013B005ADEE8 /* SF Distant Galaxy Italic.ttf */; };
+		2043ED5D1E71013B005ADEE8 /* SF Distant Galaxy Outline Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED511E71013B005ADEE8 /* SF Distant Galaxy Outline Italic.ttf */; };
+		2043ED5E1E71013B005ADEE8 /* SF Distant Galaxy Outline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED521E71013B005ADEE8 /* SF Distant Galaxy Outline.ttf */; };
+		2043ED5F1E71013B005ADEE8 /* SF Distant Galaxy Sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED531E71013B005ADEE8 /* SF Distant Galaxy Sample.jpg */; };
+		2043ED601E71013B005ADEE8 /* SF Distant Galaxy Symbols Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED541E71013B005ADEE8 /* SF Distant Galaxy Symbols Italic.ttf */; };
+		2043ED611E71013B005ADEE8 /* SF Distant Galaxy Symbols.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED551E71013B005ADEE8 /* SF Distant Galaxy Symbols.ttf */; };
+		2043ED621E71013B005ADEE8 /* SF Distant Galaxy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED561E71013B005ADEE8 /* SF Distant Galaxy.ttf */; };
 		8082D84AD92C3B1D70D3EFA7 /* Pods_socialMeteor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629E639E6EF2BF0D8716BE22 /* Pods_socialMeteor.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +37,18 @@
 		2043ED3D1E70F81C005ADEE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2043ED3F1E70F81C005ADEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2043ED451E70F854005ADEE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2043ED4B1E71013B005ADEE8 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		2043ED4C1E71013B005ADEE8 /* SF Distant Galaxy Alternate Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Distant Galaxy Alternate Italic.ttf"; sourceTree = "<group>"; };
+		2043ED4D1E71013B005ADEE8 /* SF Distant Galaxy Alternate.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Distant Galaxy Alternate.ttf"; sourceTree = "<group>"; };
+		2043ED4E1E71013B005ADEE8 /* SF Distant Galaxy AltOutline Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Distant Galaxy AltOutline Italic.ttf"; sourceTree = "<group>"; };
+		2043ED4F1E71013B005ADEE8 /* SF Distant Galaxy AltOutline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Distant Galaxy AltOutline.ttf"; sourceTree = "<group>"; };
+		2043ED501E71013B005ADEE8 /* SF Distant Galaxy Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Distant Galaxy Italic.ttf"; sourceTree = "<group>"; };
+		2043ED511E71013B005ADEE8 /* SF Distant Galaxy Outline Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Distant Galaxy Outline Italic.ttf"; sourceTree = "<group>"; };
+		2043ED521E71013B005ADEE8 /* SF Distant Galaxy Outline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Distant Galaxy Outline.ttf"; sourceTree = "<group>"; };
+		2043ED531E71013B005ADEE8 /* SF Distant Galaxy Sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "SF Distant Galaxy Sample.jpg"; sourceTree = "<group>"; };
+		2043ED541E71013B005ADEE8 /* SF Distant Galaxy Symbols Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Distant Galaxy Symbols Italic.ttf"; sourceTree = "<group>"; };
+		2043ED551E71013B005ADEE8 /* SF Distant Galaxy Symbols.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Distant Galaxy Symbols.ttf"; sourceTree = "<group>"; };
+		2043ED561E71013B005ADEE8 /* SF Distant Galaxy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Distant Galaxy.ttf"; sourceTree = "<group>"; };
 		629E639E6EF2BF0D8716BE22 /* Pods_socialMeteor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_socialMeteor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F02177EEC78839B312865CB0 /* Pods-socialMeteor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialMeteor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-socialMeteor/Pods-socialMeteor.debug.xcconfig"; sourceTree = "<group>"; };
 		FCCC8FCFD9F95E1F4603A0A5 /* Pods-socialMeteor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialMeteor.release.xcconfig"; path = "Pods/Target Support Files/Pods-socialMeteor/Pods-socialMeteor.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +95,7 @@
 				2043ED3A1E70F81C005ADEE8 /* Assets.xcassets */,
 				2043ED3C1E70F81C005ADEE8 /* LaunchScreen.storyboard */,
 				2043ED451E70F854005ADEE8 /* GoogleService-Info.plist */,
+				2043ED4A1E71013B005ADEE8 /* sf_distant_galaxy */,
 				2043ED3F1E70F81C005ADEE8 /* Info.plist */,
 			);
 			path = socialMeteor;
@@ -96,6 +121,25 @@
 				2043ED351E70F81C005ADEE8 /* SignInVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		2043ED4A1E71013B005ADEE8 /* sf_distant_galaxy */ = {
+			isa = PBXGroup;
+			children = (
+				2043ED4B1E71013B005ADEE8 /* Readme.txt */,
+				2043ED4C1E71013B005ADEE8 /* SF Distant Galaxy Alternate Italic.ttf */,
+				2043ED4D1E71013B005ADEE8 /* SF Distant Galaxy Alternate.ttf */,
+				2043ED4E1E71013B005ADEE8 /* SF Distant Galaxy AltOutline Italic.ttf */,
+				2043ED4F1E71013B005ADEE8 /* SF Distant Galaxy AltOutline.ttf */,
+				2043ED501E71013B005ADEE8 /* SF Distant Galaxy Italic.ttf */,
+				2043ED511E71013B005ADEE8 /* SF Distant Galaxy Outline Italic.ttf */,
+				2043ED521E71013B005ADEE8 /* SF Distant Galaxy Outline.ttf */,
+				2043ED531E71013B005ADEE8 /* SF Distant Galaxy Sample.jpg */,
+				2043ED541E71013B005ADEE8 /* SF Distant Galaxy Symbols Italic.ttf */,
+				2043ED551E71013B005ADEE8 /* SF Distant Galaxy Symbols.ttf */,
+				2043ED561E71013B005ADEE8 /* SF Distant Galaxy.ttf */,
+			);
+			path = sf_distant_galaxy;
 			sourceTree = "<group>";
 		};
 		37D0699B17B0620DAC099BA7 /* Frameworks */ = {
@@ -178,9 +222,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2043ED5A1E71013B005ADEE8 /* SF Distant Galaxy AltOutline Italic.ttf in Resources */,
+				2043ED601E71013B005ADEE8 /* SF Distant Galaxy Symbols Italic.ttf in Resources */,
+				2043ED5F1E71013B005ADEE8 /* SF Distant Galaxy Sample.jpg in Resources */,
+				2043ED5B1E71013B005ADEE8 /* SF Distant Galaxy AltOutline.ttf in Resources */,
+				2043ED5C1E71013B005ADEE8 /* SF Distant Galaxy Italic.ttf in Resources */,
+				2043ED581E71013B005ADEE8 /* SF Distant Galaxy Alternate Italic.ttf in Resources */,
 				2043ED3E1E70F81C005ADEE8 /* LaunchScreen.storyboard in Resources */,
+				2043ED621E71013B005ADEE8 /* SF Distant Galaxy.ttf in Resources */,
+				2043ED5D1E71013B005ADEE8 /* SF Distant Galaxy Outline Italic.ttf in Resources */,
+				2043ED591E71013B005ADEE8 /* SF Distant Galaxy Alternate.ttf in Resources */,
+				2043ED5E1E71013B005ADEE8 /* SF Distant Galaxy Outline.ttf in Resources */,
 				2043ED461E70F854005ADEE8 /* GoogleService-Info.plist in Resources */,
+				2043ED611E71013B005ADEE8 /* SF Distant Galaxy Symbols.ttf in Resources */,
 				2043ED3B1E70F81C005ADEE8 /* Assets.xcassets in Resources */,
+				2043ED571E71013B005ADEE8 /* Readme.txt in Resources */,
 				2043ED391E70F81C005ADEE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

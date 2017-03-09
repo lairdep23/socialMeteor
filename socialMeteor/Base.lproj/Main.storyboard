@@ -6,8 +6,17 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF Distant Galaxy Italic.ttf">
+            <string>SFDistantGalaxyItalic</string>
+        </array>
+        <array key="SF Distant Galaxy.ttf">
+            <string>SFDistantGalaxy</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Sign InVC-->
         <scene sceneID="tne-QT-ifu">
@@ -20,11 +29,145 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rM8-vQ-cZH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stars-Back" translatesAutoresizingMaskIntoConstraints="NO" id="2Fm-hB-XPf">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Meteor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsZ-h5-G42">
+                                        <rect key="frame" x="70" y="30" width="235" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="235" id="aTf-Dp-1qg"/>
+                                            <constraint firstAttribute="height" constant="40" id="vEh-SK-hLd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFDistantGalaxyItalic" family="SF Distant Galaxy" pointSize="26"/>
+                                        <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2Fm-hB-XPf" secondAttribute="trailing" id="5zJ-KA-SAx"/>
+                                    <constraint firstItem="NsZ-h5-G42" firstAttribute="centerY" secondItem="rM8-vQ-cZH" secondAttribute="centerY" id="Os4-ht-NQe"/>
+                                    <constraint firstItem="2Fm-hB-XPf" firstAttribute="leading" secondItem="rM8-vQ-cZH" secondAttribute="leading" id="PIE-LF-V3w"/>
+                                    <constraint firstAttribute="bottom" secondItem="2Fm-hB-XPf" secondAttribute="bottom" id="Xzr-RH-ARA"/>
+                                    <constraint firstItem="2Fm-hB-XPf" firstAttribute="top" secondItem="rM8-vQ-cZH" secondAttribute="top" id="ncS-vs-t4C"/>
+                                    <constraint firstAttribute="height" constant="100" id="qO6-JW-AE0"/>
+                                    <constraint firstItem="NsZ-h5-G42" firstAttribute="centerX" secondItem="rM8-vQ-cZH" secondAttribute="centerX" id="vsD-Wu-jCG"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a sign in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gN-Yh-8jj">
+                                <rect key="frame" x="16" y="108" width="343" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="voC-xH-wzp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFDistantGalaxy" family="SF Distant Galaxy" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="0.87379601883561642" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z1K-62-FvJ">
+                                <rect key="frame" x="43.5" y="264" width="288" height="99"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KxX-gn-2Oh">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="22"/>
+                                        <color key="textColor" white="0.0" alpha="0.86659888698630139" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="SFDistantGalaxy" family="SF Distant Galaxy" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S08-ue-dCX">
+                                        <rect key="frame" x="0.0" y="32" width="288" height="22"/>
+                                        <color key="textColor" white="0.0" alpha="0.86659888699999998" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="SFDistantGalaxy" family="SF Distant Galaxy" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5e-AE-gl6">
+                                        <rect key="frame" x="0.0" y="64" width="288" height="35"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="rYZ-kU-ulY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFDistantGalaxyItalic" family="SF Distant Galaxy" pointSize="17"/>
+                                        <state key="normal" title="Sign In/Sign Up" backgroundImage="Stars-Back">
+                                            <color key="titleColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NW4-Wl-Txr">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stars-Back" translatesAutoresizingMaskIntoConstraints="NO" id="zAy-17-0S4">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you don't have an account, one will be created for you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwB-54-hqk">
+                                        <rect key="frame" x="10" y="5" width="355" height="40"/>
+                                        <fontDescription key="fontDescription" name="SFDistantGalaxyItalic" family="SF Distant Galaxy" pointSize="13"/>
+                                        <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="zAy-17-0S4" secondAttribute="bottom" id="6o6-9q-Fuk"/>
+                                    <constraint firstItem="cwB-54-hqk" firstAttribute="leading" secondItem="NW4-Wl-Txr" secondAttribute="leading" constant="10" id="Kcq-yT-VtT"/>
+                                    <constraint firstAttribute="height" constant="50" id="T9f-pZ-B4b"/>
+                                    <constraint firstAttribute="bottom" secondItem="cwB-54-hqk" secondAttribute="bottom" constant="5" id="hXn-qX-QFN"/>
+                                    <constraint firstItem="cwB-54-hqk" firstAttribute="top" secondItem="NW4-Wl-Txr" secondAttribute="top" constant="5" id="hjd-mA-SsM"/>
+                                    <constraint firstItem="zAy-17-0S4" firstAttribute="leading" secondItem="NW4-Wl-Txr" secondAttribute="leading" id="poy-XL-yjY"/>
+                                    <constraint firstItem="zAy-17-0S4" firstAttribute="top" secondItem="NW4-Wl-Txr" secondAttribute="top" id="pqs-tX-R8j"/>
+                                    <constraint firstAttribute="trailing" secondItem="zAy-17-0S4" secondAttribute="trailing" id="qbs-r1-JFZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="cwB-54-hqk" secondAttribute="trailing" constant="10" id="twS-GA-Jmd"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yig-0Q-Ekq" userLabel="FBButton">
+                                <rect key="frame" x="43.5" y="145" width="288" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="u3T-i4-3QR"/>
+                                </constraints>
+                                <state key="normal" image="facebooklogin"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHD-yu-ctT">
+                                <rect key="frame" x="16" y="227" width="343" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="dZ3-pS-bRj"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="y03-q6-IkF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFDistantGalaxy" family="SF Distant Galaxy" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="0.87379601880000002" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jHD-yu-ctT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="578-bX-YTX"/>
+                            <constraint firstItem="rM8-vQ-cZH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CGT-la-Tjg"/>
+                            <constraint firstItem="rM8-vQ-cZH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gfc-ii-JDn"/>
+                            <constraint firstItem="Z1K-62-FvJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ktm-Lm-KUN"/>
+                            <constraint firstItem="1gN-Yh-8jj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="MFw-gB-Wbw"/>
+                            <constraint firstAttribute="trailing" secondItem="rM8-vQ-cZH" secondAttribute="trailing" id="SRy-74-hkk"/>
+                            <constraint firstItem="1gN-Yh-8jj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WYr-7h-Eds"/>
+                            <constraint firstItem="Yig-0Q-Ekq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WwS-Su-k1d"/>
+                            <constraint firstItem="Z1K-62-FvJ" firstAttribute="width" secondItem="Yig-0Q-Ekq" secondAttribute="width" id="X4I-ea-1N8"/>
+                            <constraint firstItem="1gN-Yh-8jj" firstAttribute="top" secondItem="rM8-vQ-cZH" secondAttribute="bottom" constant="8" id="YgL-jl-M4E"/>
+                            <constraint firstItem="NW4-Wl-Txr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZOs-j8-4eN"/>
+                            <constraint firstItem="jHD-yu-ctT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bLT-yc-bZS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NW4-Wl-Txr" secondAttribute="bottom" id="ffD-Wt-CKg"/>
+                            <constraint firstItem="Yig-0Q-Ekq" firstAttribute="top" secondItem="1gN-Yh-8jj" secondAttribute="bottom" constant="20" id="mBo-43-ub5"/>
+                            <constraint firstItem="jHD-yu-ctT" firstAttribute="top" secondItem="Yig-0Q-Ekq" secondAttribute="bottom" constant="20" id="osH-na-lan"/>
+                            <constraint firstItem="Z1K-62-FvJ" firstAttribute="top" secondItem="jHD-yu-ctT" secondAttribute="bottom" constant="20" id="rdi-Gc-8m7"/>
+                            <constraint firstAttribute="trailing" secondItem="NW4-Wl-Txr" secondAttribute="trailing" id="yY0-MR-X9e"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Stars-Back" width="640" height="359"/>
+        <image name="facebooklogin" width="288" height="62"/>
+    </resources>
 </document>
