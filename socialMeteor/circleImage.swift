@@ -1,5 +1,5 @@
 //
-//  topView.swift
+//  circleImage.swift
 //  socialMeteor
 //
 //  Created by Evan on 3/9/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class topView: UIView {
+class circleImage: UIImageView {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -17,8 +17,13 @@ class topView: UIView {
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
-        layer.cornerRadius = 2.0
         
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        layer.cornerRadius = self.frame.width/2
     }
 
 }

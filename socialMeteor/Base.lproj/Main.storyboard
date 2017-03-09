@@ -30,34 +30,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rM8-vQ-cZH" customClass="topView" customModule="socialMeteor" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stars-Back" translatesAutoresizingMaskIntoConstraints="NO" id="2Fm-hB-XPf">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Meteor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsZ-h5-G42">
-                                        <rect key="frame" x="70" y="30" width="235" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="235" id="aTf-Dp-1qg"/>
-                                            <constraint firstAttribute="height" constant="40" id="vEh-SK-hLd"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="SFDistantGalaxyItalic" family="SF Distant Galaxy" pointSize="26"/>
-                                        <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="2Fm-hB-XPf" secondAttribute="trailing" id="5zJ-KA-SAx"/>
-                                    <constraint firstItem="NsZ-h5-G42" firstAttribute="centerY" secondItem="rM8-vQ-cZH" secondAttribute="centerY" id="Os4-ht-NQe"/>
-                                    <constraint firstItem="2Fm-hB-XPf" firstAttribute="leading" secondItem="rM8-vQ-cZH" secondAttribute="leading" id="PIE-LF-V3w"/>
-                                    <constraint firstAttribute="bottom" secondItem="2Fm-hB-XPf" secondAttribute="bottom" id="Xzr-RH-ARA"/>
-                                    <constraint firstItem="2Fm-hB-XPf" firstAttribute="top" secondItem="rM8-vQ-cZH" secondAttribute="top" id="ncS-vs-t4C"/>
-                                    <constraint firstAttribute="height" constant="100" id="qO6-JW-AE0"/>
-                                    <constraint firstItem="NsZ-h5-G42" firstAttribute="centerX" secondItem="rM8-vQ-cZH" secondAttribute="centerX" id="vsD-Wu-jCG"/>
-                                </constraints>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a sign in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gN-Yh-8jj">
                                 <rect key="frame" x="16" y="108" width="343" height="17"/>
                                 <constraints>
@@ -80,7 +52,7 @@
                                         <rect key="frame" x="0.0" y="32" width="288" height="22"/>
                                         <color key="textColor" white="0.0" alpha="0.86659888699999998" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="SFDistantGalaxy" family="SF Distant Galaxy" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5e-AE-gl6" customClass="roundedButton" customModule="socialMeteor" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="64" width="288" height="35"/>
@@ -144,6 +116,34 @@
                                 <color key="textColor" white="0.0" alpha="0.87379601880000002" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rM8-vQ-cZH" customClass="topView" customModule="socialMeteor" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stars-Back" translatesAutoresizingMaskIntoConstraints="NO" id="2Fm-hB-XPf">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Meteor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsZ-h5-G42">
+                                        <rect key="frame" x="70" y="30" width="235" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="235" id="aTf-Dp-1qg"/>
+                                            <constraint firstAttribute="height" constant="40" id="vEh-SK-hLd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFDistantGalaxyItalic" family="SF Distant Galaxy" pointSize="26"/>
+                                        <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2Fm-hB-XPf" secondAttribute="trailing" id="5zJ-KA-SAx"/>
+                                    <constraint firstItem="NsZ-h5-G42" firstAttribute="centerY" secondItem="rM8-vQ-cZH" secondAttribute="centerY" id="Os4-ht-NQe"/>
+                                    <constraint firstItem="2Fm-hB-XPf" firstAttribute="leading" secondItem="rM8-vQ-cZH" secondAttribute="leading" id="PIE-LF-V3w"/>
+                                    <constraint firstAttribute="bottom" secondItem="2Fm-hB-XPf" secondAttribute="bottom" id="Xzr-RH-ARA"/>
+                                    <constraint firstItem="2Fm-hB-XPf" firstAttribute="top" secondItem="rM8-vQ-cZH" secondAttribute="top" id="ncS-vs-t4C"/>
+                                    <constraint firstAttribute="height" constant="100" id="qO6-JW-AE0"/>
+                                    <constraint firstItem="NsZ-h5-G42" firstAttribute="centerX" secondItem="rM8-vQ-cZH" secondAttribute="centerX" id="vsD-Wu-jCG"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -169,15 +169,262 @@
                     <connections>
                         <outlet property="email" destination="KxX-gn-2Oh" id="gSN-85-iaG"/>
                         <outlet property="password" destination="S08-ue-dCX" id="T5m-iu-Yg6"/>
+                        <segue destination="AM1-VG-KmG" kind="show" identifier="SignInSegue" id="AgR-Dp-9Bk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
+        <!--FeedVC-->
+        <scene sceneID="bpg-zy-yX4">
+            <objects>
+                <viewController id="AM1-VG-KmG" customClass="FeedVC" customModule="socialMeteor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vX9-IC-d84"/>
+                        <viewControllerLayoutGuide type="bottom" id="puL-kA-5NR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G7N-hK-Rh5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="djj-rg-5jU" customClass="topView" customModule="socialMeteor" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stars-Back" translatesAutoresizingMaskIntoConstraints="NO" id="T2B-79-Y2Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Meteor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Lq-qM-cfD">
+                                        <rect key="frame" x="70" y="5" width="235" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Nrj-Ki-nRq"/>
+                                            <constraint firstAttribute="width" constant="235" id="T7e-mC-ymx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFDistantGalaxyItalic" family="SF Distant Galaxy" pointSize="26"/>
+                                        <color key="textColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_btn" translatesAutoresizingMaskIntoConstraints="NO" id="mWa-Fj-qjk">
+                                        <rect key="frame" x="8" y="22" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="4ih-jq-1Ak"/>
+                                            <constraint firstAttribute="height" constant="20" id="8SH-Tw-uK7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_icon" translatesAutoresizingMaskIntoConstraints="NO" id="7ZV-SI-viZ">
+                                        <rect key="frame" x="347" y="22" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="DHu-sb-s8E"/>
+                                            <constraint firstAttribute="width" constant="20" id="ti1-q0-mB6"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8bU-6e-af4"/>
+                                    <constraint firstItem="mWa-Fj-qjk" firstAttribute="leading" secondItem="djj-rg-5jU" secondAttribute="leading" constant="8" id="9ev-Np-pCp"/>
+                                    <constraint firstAttribute="bottom" secondItem="mWa-Fj-qjk" secondAttribute="bottom" constant="8" id="A24-xe-hT3"/>
+                                    <constraint firstItem="7Lq-qM-cfD" firstAttribute="centerY" secondItem="djj-rg-5jU" secondAttribute="centerY" id="DZq-or-OUK"/>
+                                    <constraint firstItem="T2B-79-Y2Q" firstAttribute="leading" secondItem="djj-rg-5jU" secondAttribute="leading" id="I58-Q8-0yf"/>
+                                    <constraint firstAttribute="trailing" secondItem="7ZV-SI-viZ" secondAttribute="trailing" constant="8" id="P3s-sH-HHq"/>
+                                    <constraint firstItem="7Lq-qM-cfD" firstAttribute="centerX" secondItem="djj-rg-5jU" secondAttribute="centerX" id="YpM-eG-tNa"/>
+                                    <constraint firstAttribute="bottom" secondItem="7ZV-SI-viZ" secondAttribute="bottom" constant="8" id="b1e-Cg-yAo"/>
+                                    <constraint firstAttribute="bottom" secondItem="T2B-79-Y2Q" secondAttribute="bottom" id="pu8-Y1-w0z"/>
+                                    <constraint firstItem="T2B-79-Y2Q" firstAttribute="top" secondItem="djj-rg-5jU" secondAttribute="top" id="rkd-RY-uOs"/>
+                                    <constraint firstAttribute="trailing" secondItem="T2B-79-Y2Q" secondAttribute="trailing" id="xZY-VO-j8T"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tyc-1G-Ygi" customClass="topView" customModule="socialMeteor" customModuleProvider="target">
+                                <rect key="frame" x="16" y="58" width="343" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="M94-eI-Shy">
+                                        <rect key="frame" x="8" y="0.0" width="327" height="50"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera_icon_snap" translatesAutoresizingMaskIntoConstraints="NO" id="zSs-Rd-BQ1">
+                                                <rect key="frame" x="0.0" y="5" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="cj3-8H-hC3"/>
+                                                    <constraint firstAttribute="height" constant="40" id="pSV-Wf-Kty"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Add a post" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xgY-Jr-M1K" customClass="textField" customModule="socialMeteor" customModuleProvider="target">
+                                                <rect key="frame" x="48" y="5" width="231" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Drw-Eg-XsA"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.0" alpha="0.86659888699999998" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="SFDistantGalaxy" family="SF Distant Galaxy" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8v-kb-2fD" customClass="roundedButton" customModule="socialMeteor" customModuleProvider="target">
+                                                <rect key="frame" x="287" y="5" width="40" height="40"/>
+                                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="k9x-2j-Pa7"/>
+                                                    <constraint firstAttribute="height" constant="40" id="kAk-EL-JEq"/>
+                                                </constraints>
+                                                <state key="normal" image="post_btn"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="M94-eI-Shy" secondAttribute="bottom" id="0Lg-v0-J4r"/>
+                                    <constraint firstAttribute="height" constant="50" id="8Ev-N8-Ob9"/>
+                                    <constraint firstAttribute="trailing" secondItem="M94-eI-Shy" secondAttribute="trailing" constant="8" id="CvD-tn-rcW"/>
+                                    <constraint firstItem="M94-eI-Shy" firstAttribute="top" secondItem="tyc-1G-Ygi" secondAttribute="top" id="dvo-Vx-6g0"/>
+                                    <constraint firstItem="M94-eI-Shy" firstAttribute="leading" secondItem="tyc-1G-Ygi" secondAttribute="leading" constant="8" id="qML-A7-U81"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="400" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jze-Ma-gsM">
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="400" id="vtd-cD-KGP" customClass="PostCell" customModule="socialMeteor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="400"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vtd-cD-KGP" id="3n2-92-IeF">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQw-MR-dHO" customClass="topView" customModule="socialMeteor" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="8" width="343" height="384"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart_deselected_icon" translatesAutoresizingMaskIntoConstraints="NO" id="VWz-by-33m">
+                                                            <rect key="frame" x="285" y="8" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="CXE-Lt-Loi"/>
+                                                                <constraint firstAttribute="height" constant="50" id="vqb-Lm-NVN"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3EW-Xg-XR8">
+                                                            <rect key="frame" x="66" y="8" width="211" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="LbY-GN-EG4"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="SFDistantGalaxy" family="SF Distant Galaxy" pointSize="20"/>
+                                                            <color key="textColor" white="0.0" alpha="0.87379601880000002" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Likes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="A90-U6-jzj">
+                                                            <rect key="frame" x="212" y="356" width="65" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="65" id="BJm-Cp-xFg"/>
+                                                                <constraint firstAttribute="height" constant="20" id="rOU-YJ-fAa"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="SFDistantGalaxy" family="SF Distant Galaxy" pointSize="20"/>
+                                                            <color key="textColor" white="0.0" alpha="0.87379601880000002" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HV2-Fb-ist">
+                                                            <rect key="frame" x="8" y="66" width="327" height="282"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stars-Back" translatesAutoresizingMaskIntoConstraints="NO" id="UCC-ny-Ikk">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="327" height="224"/>
+                                                                </imageView>
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaY-1n-bop">
+                                                                    <rect key="frame" x="0.0" y="232" width="327" height="50"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="JHU-lb-t0h"/>
+                                                                    </constraints>
+                                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </string>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                </textView>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="122" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q2D-c4-fy3">
+                                                            <rect key="frame" x="285" y="356" width="50" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="dq5-Ce-JN1"/>
+                                                                <constraint firstAttribute="height" constant="20" id="eKQ-uK-3ne"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="SFDistantGalaxy" family="SF Distant Galaxy" pointSize="20"/>
+                                                            <color key="textColor" white="0.0" alpha="0.87379601880000002" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_icon" translatesAutoresizingMaskIntoConstraints="NO" id="VWF-px-g40" customClass="circleImage" customModule="socialMeteor" customModuleProvider="target">
+                                                            <rect key="frame" x="8" y="8" width="50" height="50"/>
+                                                            <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="NIi-cx-IQX"/>
+                                                                <constraint firstAttribute="width" constant="50" id="q0o-zW-C8w"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="Q2D-c4-fy3" secondAttribute="trailing" constant="8" id="3hg-tC-TMF"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Q2D-c4-fy3" secondAttribute="bottom" constant="8" id="85w-mf-RD5"/>
+                                                        <constraint firstItem="VWF-px-g40" firstAttribute="leading" secondItem="eQw-MR-dHO" secondAttribute="leading" constant="8" id="CBk-3d-uEM"/>
+                                                        <constraint firstAttribute="bottom" secondItem="A90-U6-jzj" secondAttribute="bottom" constant="8" id="IH4-XI-beI"/>
+                                                        <constraint firstItem="VWF-px-g40" firstAttribute="top" secondItem="eQw-MR-dHO" secondAttribute="top" constant="8" id="Lgc-9U-bm3"/>
+                                                        <constraint firstAttribute="trailing" secondItem="VWz-by-33m" secondAttribute="trailing" constant="8" id="NCM-v0-2z6"/>
+                                                        <constraint firstItem="VWz-by-33m" firstAttribute="top" secondItem="eQw-MR-dHO" secondAttribute="top" constant="8" id="P0T-gR-4zL"/>
+                                                        <constraint firstItem="Q2D-c4-fy3" firstAttribute="top" secondItem="HV2-Fb-ist" secondAttribute="bottom" constant="8" id="Vkp-Ra-D7j"/>
+                                                        <constraint firstItem="VWz-by-33m" firstAttribute="leading" secondItem="3EW-Xg-XR8" secondAttribute="trailing" constant="8" id="al9-ca-TXJ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="HV2-Fb-ist" secondAttribute="trailing" constant="8" id="lb9-u6-oJk"/>
+                                                        <constraint firstItem="HV2-Fb-ist" firstAttribute="top" secondItem="3EW-Xg-XR8" secondAttribute="bottom" constant="8" id="mqZ-HS-6sw"/>
+                                                        <constraint firstItem="Q2D-c4-fy3" firstAttribute="leading" secondItem="A90-U6-jzj" secondAttribute="trailing" constant="8" id="npr-OC-eSh"/>
+                                                        <constraint firstItem="3EW-Xg-XR8" firstAttribute="leading" secondItem="VWF-px-g40" secondAttribute="trailing" constant="8" id="oKe-ac-DTw"/>
+                                                        <constraint firstItem="HV2-Fb-ist" firstAttribute="leading" secondItem="eQw-MR-dHO" secondAttribute="leading" constant="8" id="qPQ-zI-GBy"/>
+                                                        <constraint firstItem="3EW-Xg-XR8" firstAttribute="top" secondItem="eQw-MR-dHO" secondAttribute="top" constant="8" id="sm2-3D-XHR"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="eQw-MR-dHO" firstAttribute="leading" secondItem="3n2-92-IeF" secondAttribute="leading" constant="16" id="1So-QF-AX9"/>
+                                                <constraint firstAttribute="trailing" secondItem="eQw-MR-dHO" secondAttribute="trailing" constant="16" id="7tF-l7-TUA"/>
+                                                <constraint firstItem="eQw-MR-dHO" firstAttribute="top" secondItem="3n2-92-IeF" secondAttribute="topMargin" id="OjB-RC-2Hs"/>
+                                                <constraint firstItem="eQw-MR-dHO" firstAttribute="bottom" secondItem="3n2-92-IeF" secondAttribute="bottomMargin" id="hkm-3p-R2C"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="likeImage" destination="VWz-by-33m" id="295-Nc-HlU"/>
+                                            <outlet property="numberOfLikes" destination="Q2D-c4-fy3" id="ryv-er-kZl"/>
+                                            <outlet property="postDescription" destination="CaY-1n-bop" id="aJC-hI-T3h"/>
+                                            <outlet property="postImage" destination="UCC-ny-Ikk" id="oXx-Cl-qH6"/>
+                                            <outlet property="profileImage" destination="VWF-px-g40" id="QDd-lr-JWZ"/>
+                                            <outlet property="usernameLabel" destination="3EW-Xg-XR8" id="nUf-Yt-66c"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jze-Ma-gsM" firstAttribute="top" secondItem="tyc-1G-Ygi" secondAttribute="bottom" constant="8" id="3pd-bG-FY3"/>
+                            <constraint firstItem="tyc-1G-Ygi" firstAttribute="top" secondItem="djj-rg-5jU" secondAttribute="bottom" constant="8" id="6HA-Uj-KCm"/>
+                            <constraint firstItem="djj-rg-5jU" firstAttribute="leading" secondItem="G7N-hK-Rh5" secondAttribute="leading" id="Fol-u5-OkE"/>
+                            <constraint firstItem="jze-Ma-gsM" firstAttribute="leading" secondItem="G7N-hK-Rh5" secondAttribute="leading" id="Nea-xj-0O3"/>
+                            <constraint firstAttribute="trailing" secondItem="tyc-1G-Ygi" secondAttribute="trailing" constant="16" id="QRT-FA-jYD"/>
+                            <constraint firstAttribute="trailing" secondItem="jze-Ma-gsM" secondAttribute="trailing" id="TeI-VI-YbP"/>
+                            <constraint firstAttribute="trailing" secondItem="djj-rg-5jU" secondAttribute="trailing" id="V4p-B8-bVC"/>
+                            <constraint firstItem="puL-kA-5NR" firstAttribute="top" secondItem="jze-Ma-gsM" secondAttribute="bottom" id="if1-zK-kba"/>
+                            <constraint firstItem="tyc-1G-Ygi" firstAttribute="leading" secondItem="G7N-hK-Rh5" secondAttribute="leading" constant="16" id="kgb-qx-7aT"/>
+                            <constraint firstItem="djj-rg-5jU" firstAttribute="top" secondItem="G7N-hK-Rh5" secondAttribute="top" id="qYd-Ik-rAZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="feedTableView" destination="jze-Ma-gsM" id="P8V-Qs-Pjf"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="SignOutSegue" id="Buw-vk-dTb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPn-ob-R0t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872.79999999999995" y="138.98050974512745"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Stars-Back" width="640" height="359"/>
+        <image name="back_btn" width="17" height="15"/>
+        <image name="camera_icon_snap" width="29" height="24"/>
         <image name="facebooklogin" width="288" height="62"/>
+        <image name="heart_deselected_icon" width="22" height="20"/>
+        <image name="post_btn" width="22" height="23"/>
+        <image name="profile_icon" width="20" height="20"/>
     </resources>
 </document>

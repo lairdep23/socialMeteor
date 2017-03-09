@@ -29,6 +29,9 @@
 		20CA53B11E719EB000572658 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA53B01E719EB000572658 /* constants.swift */; };
 		20CA53B31E71A05700572658 /* roundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA53B21E71A05700572658 /* roundedButton.swift */; };
 		20CA53B51E71A21F00572658 /* textField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA53B41E71A21F00572658 /* textField.swift */; };
+		20CDC3F71E71F0D300550312 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CDC3F61E71F0D300550312 /* FeedVC.swift */; };
+		20CDC3F91E72009700550312 /* circleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CDC3F81E72009700550312 /* circleImage.swift */; };
+		20CDC3FB1E720C2F00550312 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CDC3FA1E720C2F00550312 /* PostCell.swift */; };
 		8082D84AD92C3B1D70D3EFA7 /* Pods_socialMeteor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629E639E6EF2BF0D8716BE22 /* Pods_socialMeteor.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,9 @@
 		20CA53B21E71A05700572658 /* roundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundedButton.swift; sourceTree = "<group>"; };
 		20CA53B41E71A21F00572658 /* textField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = textField.swift; sourceTree = "<group>"; };
 		20CA53B71E71B02C00572658 /* socialMeteor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = socialMeteor.entitlements; sourceTree = "<group>"; };
+		20CDC3F61E71F0D300550312 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		20CDC3F81E72009700550312 /* circleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = circleImage.swift; sourceTree = "<group>"; };
+		20CDC3FA1E720C2F00550312 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		629E639E6EF2BF0D8716BE22 /* Pods_socialMeteor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_socialMeteor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F02177EEC78839B312865CB0 /* Pods-socialMeteor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialMeteor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-socialMeteor/Pods-socialMeteor.debug.xcconfig"; sourceTree = "<group>"; };
 		FCCC8FCFD9F95E1F4603A0A5 /* Pods-socialMeteor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialMeteor.release.xcconfig"; path = "Pods/Target Support Files/Pods-socialMeteor/Pods-socialMeteor.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +130,8 @@
 				20CA53AE1E719E3700572658 /* topView.swift */,
 				20CA53B41E71A21F00572658 /* textField.swift */,
 				20CA53B21E71A05700572658 /* roundedButton.swift */,
+				20CDC3F81E72009700550312 /* circleImage.swift */,
+				20CDC3FA1E720C2F00550312 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -132,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				2043ED351E70F81C005ADEE8 /* SignInVC.swift */,
+				20CDC3F61E71F0D300550312 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -324,7 +333,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2043ED361E70F81C005ADEE8 /* SignInVC.swift in Sources */,
+				20CDC3F91E72009700550312 /* circleImage.swift in Sources */,
+				20CDC3F71E71F0D300550312 /* FeedVC.swift in Sources */,
 				20CA53B31E71A05700572658 /* roundedButton.swift in Sources */,
+				20CDC3FB1E720C2F00550312 /* PostCell.swift in Sources */,
 				2043ED341E70F81C005ADEE8 /* AppDelegate.swift in Sources */,
 				20CA53B51E71A21F00572658 /* textField.swift in Sources */,
 				20CA53AF1E719E3700572658 /* topView.swift in Sources */,
