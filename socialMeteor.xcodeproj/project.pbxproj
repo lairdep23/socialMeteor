@@ -25,6 +25,8 @@
 		2043ED601E71013B005ADEE8 /* SF Distant Galaxy Symbols Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED541E71013B005ADEE8 /* SF Distant Galaxy Symbols Italic.ttf */; };
 		2043ED611E71013B005ADEE8 /* SF Distant Galaxy Symbols.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED551E71013B005ADEE8 /* SF Distant Galaxy Symbols.ttf */; };
 		2043ED621E71013B005ADEE8 /* SF Distant Galaxy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2043ED561E71013B005ADEE8 /* SF Distant Galaxy.ttf */; };
+		2086A68E1E7873B00070B8C9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2086A68D1E7873B00070B8C9 /* DataService.swift */; };
+		20AD2F911E7AC73E00B221A3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD2F901E7AC73E00B221A3 /* Post.swift */; };
 		20CA53AF1E719E3700572658 /* topView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA53AE1E719E3700572658 /* topView.swift */; };
 		20CA53B11E719EB000572658 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA53B01E719EB000572658 /* constants.swift */; };
 		20CA53B31E71A05700572658 /* roundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CA53B21E71A05700572658 /* roundedButton.swift */; };
@@ -56,6 +58,8 @@
 		2043ED541E71013B005ADEE8 /* SF Distant Galaxy Symbols Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Distant Galaxy Symbols Italic.ttf"; sourceTree = "<group>"; };
 		2043ED551E71013B005ADEE8 /* SF Distant Galaxy Symbols.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Distant Galaxy Symbols.ttf"; sourceTree = "<group>"; };
 		2043ED561E71013B005ADEE8 /* SF Distant Galaxy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF Distant Galaxy.ttf"; sourceTree = "<group>"; };
+		2086A68D1E7873B00070B8C9 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		20AD2F901E7AC73E00B221A3 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		20CA53AE1E719E3700572658 /* topView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = topView.swift; sourceTree = "<group>"; };
 		20CA53B01E719EB000572658 /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		20CA53B21E71A05700572658 /* roundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = roundedButton.swift; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 		2043ED321E70F81C005ADEE8 /* socialMeteor */ = {
 			isa = PBXGroup;
 			children = (
+				2086A68C1E7873960070B8C9 /* Services */,
 				20CA53B71E71B02C00572658 /* socialMeteor.entitlements */,
 				20CA53B61E71A57D00572658 /* Assets */,
 				2043ED491E70FA44005ADEE8 /* Controller */,
@@ -120,6 +125,7 @@
 		2043ED471E70FA2F005ADEE8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				20AD2F901E7AC73E00B221A3 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -162,6 +168,14 @@
 				2043ED561E71013B005ADEE8 /* SF Distant Galaxy.ttf */,
 			);
 			path = sf_distant_galaxy;
+			sourceTree = "<group>";
+		};
+		2086A68C1E7873960070B8C9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2086A68D1E7873B00070B8C9 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		20CA53B61E71A57D00572658 /* Assets */ = {
@@ -333,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2043ED361E70F81C005ADEE8 /* SignInVC.swift in Sources */,
+				20AD2F911E7AC73E00B221A3 /* Post.swift in Sources */,
 				20CDC3F91E72009700550312 /* circleImage.swift in Sources */,
 				20CDC3F71E71F0D300550312 /* FeedVC.swift in Sources */,
 				20CA53B31E71A05700572658 /* roundedButton.swift in Sources */,
@@ -341,6 +356,7 @@
 				20CA53B51E71A21F00572658 /* textField.swift in Sources */,
 				20CA53AF1E719E3700572658 /* topView.swift in Sources */,
 				20CA53B11E719EB000572658 /* constants.swift in Sources */,
+				2086A68E1E7873B00070B8C9 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
