@@ -30,14 +30,15 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         imagePicker.allowsEditing = true
         imagePicker.delegate = self
         
-        DataService.ds.refPosts.observe(.value, with: { (snapshot) in
+        DataService.ds.refPosts.queryOrdered(byChild: "postDate").observe(.value, with: { (snapshot) in
             if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] {
+                self.posts.removeAll(keepingCapacity: false)
                 for snap in snapshots {
                     if let postDict = snap.value as? Dictionary<String,AnyObject> {
                         let key = snap.key
                         let post = Post(postKey: key, postData: postDict)
-                        self.posts.append(post)
-                            
+                        
+                        self.posts.insert(post, at: 0)
                     }
                 }
             }
@@ -127,7 +128,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         let post: Dictionary<String, Any> = [
         "caption": postCaption.text!,
         "imageUrl": imgUrl,
-        "likes": 0
+        "likes": 0,
+        "postDate": FIRServerValue.timestamp()
         ]
         
         let firebasePost = DataService.ds.refPosts.childByAutoId()
@@ -136,7 +138,9 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
         postCaption.text = ""
         imagePost.image = UIImage(named: "camera_icon_snap")
+        //print(posts)
         feedTableView.reloadData()
+        //print(posts)
     }
     
     

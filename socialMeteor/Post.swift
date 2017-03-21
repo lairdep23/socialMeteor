@@ -15,6 +15,7 @@ class Post {
     private var _likes: Int!
     private var _postKey: String!
     private var _postRef: FIRDatabaseReference!
+    private var _postDate: String!
     
     var caption: String {
         return _caption
@@ -29,6 +30,10 @@ class Post {
     
     var postKey: String {
         return _postKey
+    }
+    
+    var postDate: String {
+        return _postDate
     }
     
     init(caption: String, imageUrl: String, likes: Int) {
@@ -50,6 +55,10 @@ class Post {
         
         if let likes = postData["likes"] as? Int{
             self._likes = likes
+        }
+        
+        if let postDate = postData["postDate"] as? String {
+            self._postDate = postDate
         }
         
         _postRef = DataService.ds.refPosts.child(postKey)
